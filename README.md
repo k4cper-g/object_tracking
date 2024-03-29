@@ -5,4 +5,5 @@ https://github.com/k4cper-g/object_tracking/assets/93160987/99d94617-b8fd-45fc-9
 Steps to reproduce:
 --
 
-1) Tweak 
+1) Tweak HSV lower and upper bound arrays for the mask to detect desired color correctly.
+2) 
