@@ -6,4 +6,7 @@ Steps to reproduce:
 --
 
 1) Tweak HSV lower and upper bound arrays for the mask to detect desired color correctly.
-2) 
+```python
+print("easy")
+```
+3) 
