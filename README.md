@@ -16,4 +16,19 @@ upper = np.array([10,255,255])
 cap = cv2.VideoCapture('YOUR_INPUT_VIDEO')
 out = cv2.VideoWriter('YOUR_OUTPUT_VIDEO', cv2.VideoWriter_fourcc(*'mp4v'), fps, (width, height)) 
 ```
-3) Run code and enjoy tracked object.
+3) Run main loop and enjoy tracked object.
+```python
+while True:
+  ret, frame = cap.read()
+  if not ret:
+    break
+  hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+  frame = draw_bound(hsv, frame)
+
+  out.write(frame)
+
+
+cap.release()
+out.release()
+cv2.destroyAllWindows()
+```
