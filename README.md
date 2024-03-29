@@ -11,4 +11,9 @@ Steps to reproduce:
 lower = np.array([0,60,0])
 upper = np.array([10,255,255])
 ```
-3) 
+2) Change input and output respectively.
+```python
+cap = cv2.VideoCapture('YOUR_INPUT_VIDEO')
+out = cv2.VideoWriter('YOUR_OUTPUT_VIDEO', cv2.VideoWriter_fourcc(*'mp4v'), fps, (width, height)) 
+```
+3) Run code and enjoy tracked object.
