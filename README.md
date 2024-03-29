@@ -7,6 +7,8 @@ Steps to reproduce:
 
 1) Tweak HSV lower and upper bound arrays for the mask to detect desired color correctly.
 ```python
-print("easy")
+# red color
+lower = np.array([0,60,0])
+upper = np.array([10,255,255])
 ```
 3) 
